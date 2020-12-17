@@ -1,0 +1,20 @@
+@use 'partials/_variables';
+
+.navbar{
+
+    @include container;
+    @include d-flex;
+
+    ul{
+       @include d-flex;
+       @include ul-formatted;
+   }
+   button{
+       @include d-flex;
+       
+       img{
+           width: 18px;
+           height: 18px;
+       }
+   }
+}

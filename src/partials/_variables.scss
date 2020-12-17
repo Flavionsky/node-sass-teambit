@@ -1,0 +1,16 @@
+$color-section1-3: #FFE7D2;
+$color-button: #2C4792;
+
+@mixin ul-formatted {
+    list-style: none;
+}
+@mixin container {
+    width: 1400px;
+    margin: 0px auto;
+  }
+@mixin d-flex{
+    display: flex; 
+}
+@mixin align-items-center{
+    align-items: center;
+}
