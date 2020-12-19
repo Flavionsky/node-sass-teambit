@@ -1,16 +1,54 @@
-$color-section1-3: #FFE7D2;
-$color-button: #2C4792;
+$color-section1:#0414B3;
+$color-section3:#3E14E9;
+$color-button: #7F14D4;
 
 @mixin ul-formatted {
     list-style: none;
 }
 @mixin container {
-    width: 1400px;
+    width: 1600px;
     margin: 0px auto;
   }
 @mixin d-flex{
     display: flex; 
 }
+@mixin flex-column{
+    flex-direction: column;
+}
+@mixin flex-wrap{
+    flex-wrap: wrap;
+}
 @mixin align-items-center{
     align-items: center;
+}
+@mixin self-center{
+    align-self: center;
+}
+@mixin self-end{
+    align-self: flex-end;
+}
+@mixin justify-content-center {
+    justify-content: center;
+}
+@mixin justify-content-around {
+    justify-content: space-around;
+}
+@mixin justify-content-between {
+    justify-content: space-between;
+}
+@mixin justify-content-start {
+    justify-content: flex-start;
+}
+@mixin justify-content-end {
+    justify-content: flex-end;
+}
+@mixin  align-items-start {
+    align-items: flex-start;
+}
+@mixin  align-items-end {
+    align-items: flex-end;
+}
+@mixin logo-small {
+    width: 18px;
+    height: 18px;
 }

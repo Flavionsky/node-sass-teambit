@@ -1,20 +1,76 @@
-@use 'partials/_variables';
+@use 'partials/variables';
 
 .navbar{
 
-    @include container;
-    @include d-flex;
-
-    ul{
-       @include d-flex;
-       @include ul-formatted;
-   }
-   button{
-       @include d-flex;
-       
+    @include variables.container;
+    @include variables.d-flex;
+    @include variables.justify-content-between;
+    @include variables.align-items-center;
+    border-bottom: 1px solid black;
+    .logo{
+       @include variables.d-flex;
+       @include variables.align-items-center;
        img{
-           width: 18px;
-           height: 18px;
+           width: 140px;
        }
+    }
+    ul{
+       @include variables.d-flex;
+       @include variables.ul-formatted;
+       @include variables.align-items-center;
+
+       li{
+           padding-left: 10px;
+           padding-right: 10px;
+       }
+       button{
+           @include variables.d-flex;
+           @include variables.justify-content-center;
+           @include variables.align-items-center;
+           img{
+               @include variables.logo-small;
+           }
+           span{
+               padding: 10px;
+           }
    }
+   }
+}
+.hero{
+    @include variables.container;
+    @include variables.d-flex;
+    @include variables.justify-content-between;
+    .hero-text{
+        h1{
+            font-size: 50px;
+            opacity: 0.7;
+        }
+        .buttons{
+            @include variables.d-flex;
+            margin-top: 50px;
+            margin-bottom: 10px;
+            button{
+                background-color: variables.$color-button;
+                color:white;
+                border: 1px solid black;
+                border-radius: 5px;
+                cursor: pointer;
+                @include variables.d-flex;
+                @include variables.align-items-center;
+              img{
+                @include variables.logo-small;
+              }  
+            }
+            span{
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+    }
+    .hero-background{
+
+        img{
+            width: 800px;
+        }
+    }
 }

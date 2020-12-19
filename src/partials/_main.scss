@@ -1,0 +1,127 @@
+@use 'partials/variables';
+
+.first-big{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: variables.$color-section1;
+    .mycontainer{
+        color: white;
+        @include variables.container;
+        @include variables.d-flex;
+        @include variables.flex-column;
+        @include variables.justify-content-center;
+        @include variables.align-items-center;
+        .first-up{
+            padding-top: 50px;
+            margin-top: 50px;
+            @include variables.d-flex;
+            @include variables.flex-wrap;
+            @include variables.justify-content-around;
+            padding-bottom: 100px;
+            margin-bottom: 100px;
+            border-bottom: 1px solid white;
+        }
+        .second-down{
+            padding-top: 50px;
+            margin-top: 50px;
+            @include variables.d-flex;
+            @include variables.flex-wrap;
+            @include variables.align-items-center;
+            @include variables.justify-content-around;
+        }
+    }
+}
+.second-help{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: white;
+    .mycontainer{
+        @include variables.d-flex;
+        @include variables.flex-column;
+        .row{
+            .col-8{
+                img{
+                    width: 900px;
+                }
+            }
+            .col-4{
+                width: 440px;
+                img{
+                    margin-top: 30px;
+                    width: 100%;
+                }
+            }
+        }
+        .first{
+            @include variables.d-flex;
+            @include variables.justify-content-start;
+            padding-bottom: 50px;
+        }
+        .second{
+            @include variables.d-flex;
+            @include variables.justify-content-end;
+            padding-bottom: 50px;
+        }
+        .third{
+            @include variables.d-flex;
+            @include variables.justify-content-start;
+            padding-bottom: 50px;
+        }
+        .fourth{
+            @include variables.d-flex;
+            @include variables.justify-content-end;
+        }
+    }
+}
+.third-start{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: variables.$color-section3;
+    .mycontainer{
+        color: white;
+        @include variables.container;
+        @include variables.d-flex;
+        @include variables.flex-column;
+        @include variables.justify-content-center;
+        @include variables.align-items-center;
+        .message{
+            border-radius: 10px;
+            border: 1px solid black;
+            width: 40%;
+            background-color: white;
+            color: black;
+            padding: 30px;
+            .founders{
+                @include variables.d-flex;
+                img{
+                    width: 60px;
+                    margin-right: 10px;
+                }
+                span{
+                    @include variables.self-center;
+                }
+            }
+        }
+        .buttons{
+            @include variables.d-flex;
+            margin-top: 50px;
+            margin-bottom: 10px;
+            button{
+                background-color: variables.$color-button;
+                color:white;
+                border: 1px solid black;
+                border-radius: 5px;
+                cursor: pointer;
+                @include variables.d-flex;
+                @include variables.align-items-center;
+              img{
+                @include variables.logo-small;
+              }  
+            }
+            span{
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }  
+    }
+}

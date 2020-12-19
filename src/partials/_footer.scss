@@ -1,0 +1,44 @@
+@use 'partials/variables';
+footer{
+    .mycontainer{
+        @include variables.container;
+        @include variables.d-flex;
+        @include variables.justify-content-between;
+        opacity: 0.8;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        .col-4{
+           margin-top: 20px;
+           width: 400px;
+           @include variables.d-flex;
+           @include variables.align-items-start;
+           img{
+               width: 220px;
+               margin-right: 20px;
+           }
+        }
+        .col-8{
+           width: 1100px;
+           @include variables.d-flex;
+           div{
+            @include variables.d-flex;
+            @include variables.flex-column;
+            text-align: left;
+            ul {
+                margin-right: 80px;
+                @include variables.ul-formatted;
+
+                li{
+                    width: 150px;
+                    margin-left: -40px;
+                    margin-bottom: 10px;
+                    a{
+                        color: black;
+                        text-decoration: none;
+                    }
+                }
+               }
+           }
+        }
+    }
+}
